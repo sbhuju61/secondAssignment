@@ -49,12 +49,20 @@ public class App {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		App second = new App();
+
 		// second.commandLineAddition();
+
 		int int2DArray[][] = { { 1, 297, 3 }, { 5, 84, 3 } };
 		second.max2DArray(int2DArray);
 
 		Rectangle rect = new Rectangle(5.0, 4.0);
-		System.out.println(rect.calculateArea());
+		System.out.println("The area of rectangle is " + rect.calculateArea());
+
+		Triangle tri = new Triangle(5.0, 4.0);
+		System.out.println("The area of triangle is " + tri.calculateArea());
+
+		Circle cir = new Circle(5.0);
+		System.out.println("The area of circle is " + cir.calculateArea());
 	}
 
 }
